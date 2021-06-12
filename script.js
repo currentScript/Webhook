@@ -1,25 +1,19 @@
-let send = () => {
-  let name = document.querySelector(".name").value;
-  let message = document.querySelector(".message").value;
-  let url = document.querySelector(".url").value;
-  let amount = document.querySelector(".amount").value;
-  let avatarURL = document.querySelector(".avatar").value;
-  let tts = document.querySelector(".tts");
-  let ttsValue = tts.options[tts.selectedIndex].value;
+const send = () => {
+  const name = document.querySelector(".name").value;
+  const message = document.querySelector(".message").value;
+  const url = document.querySelector(".url").value;
+  const amount = document.querySelector(".amount").value;
+  const avatarURL = document.querySelector(".avatar").value;
+  const tts = document.querySelector(".tts");
+  const ttsValue = tts.options[tts.selectedIndex].value;
   let isTTS;
 
   if (ttsValue === "true") isTTS = true;
   else isTTS = false;
 
-  console.log(name);
-  console.log(message);
-  console.log(url);
-  console.log(amount);
-  console.log(isTTS);
+  const request = new XMLHttpRequest();
 
-  var request = new XMLHttpRequest();
-
-  var params = {
+  const params = {
     username: name,
     avatar_url: avatarURL,
     content: message,
@@ -27,7 +21,7 @@ let send = () => {
   };
 
   for (let i = 1; i <= amount; i++) {
-    console.log("IM LOOPING " + i);
+    console.log(i);
 
     request.open("POST", url, false);
     request.setRequestHeader("Content-type", "application/json");
