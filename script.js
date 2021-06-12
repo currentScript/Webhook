@@ -23,7 +23,7 @@ const send = () => {
   for (let i = 1; i <= amount; i++) {
     console.log(i);
 
-    request.open("POST", url, false);
+    request.open("POST", url, true);
     request.setRequestHeader("Content-type", "application/json");
     request.send(JSON.stringify(params));
     setTimeout(500);
