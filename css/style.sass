@@ -1,0 +1,94 @@
+$color-prim: #67bce6a9
+$bg-corlor: #0F0F1D
+$color-sec: #D41BFF
+
+*, *:before, *:after 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+
+body
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: $bg-corlor
+    color: white    
+    font-family: sans-serif
+
+h1
+    margin-bottom: 4rem
+
+input
+    height: 40px
+    width: 20rem
+    background: none
+    border: none
+    border-radius: 10px
+    outline: none
+    padding: 15px
+    font-size: 20px
+    margin-bottom: 1rem
+    border: 2px solid $color-prim
+    color: white
+
+.message
+    height: 100px
+
+.urlHead
+    width: 75px
+    cursor: pointer
+
+.urlInfo
+    visibility: visible
+    width: 500px
+    background-color: $bg-corlor
+    border: 2px solid $color-prim
+    color: #fff
+    padding: 15px
+    border-radius: 15px
+    position: absolute
+    transform: translateX(-60px) translateY(-120%)
+    z-index: 1
+
+.urlHead:hover + .urlInfo
+    transform: translateX(60px) translateY(-120%)
+    visibility: visible
+
+h3 span
+    font-size: .8rem
+
+select
+    height: 40px
+    width: 10rem
+    background: none
+    color: white
+    border: none
+    border-radius: 10px
+    outline: none
+    font-size: 17px
+    margin-bottom: 3rem
+    padding: 3px
+    cursor: pointer
+    border: 2px solid $color-prim
+
+    option
+        background: $bg-corlor
+
+button
+    height: 50px
+    width: 15rem
+    border-radius: 40px
+    border: none
+    outline: none
+    color: white
+    background: #d51bff00
+    font-size: 25px
+    cursor: pointer
+    border: 2px solid $color-sec
+    transition: .3s ease
+
+    &:hover 
+        background: $color-sec

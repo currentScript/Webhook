@@ -1,0 +1,115 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #0F0F1D;
+  color: white;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-bottom: 4rem;
+}
+
+input {
+  height: 40px;
+  width: 20rem;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  border: 2px solid #67bce6a9;
+  color: white;
+}
+
+.message {
+  height: 100px;
+}
+
+.urlHead {
+  width: 75px;
+  cursor: pointer;
+}
+
+.urlInfo {
+  visibility: visible;
+  width: 500px;
+  background-color: #0F0F1D;
+  border: 2px solid #67bce6a9;
+  color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  position: absolute;
+  -webkit-transform: translateX(-60px) translateY(-120%);
+          transform: translateX(-60px) translateY(-120%);
+  z-index: 1;
+}
+
+.urlHead:hover + .urlInfo {
+  -webkit-transform: translateX(60px) translateY(-120%);
+          transform: translateX(60px) translateY(-120%);
+  visibility: visible;
+}
+
+h3 span {
+  font-size: .8rem;
+}
+
+select {
+  height: 40px;
+  width: 10rem;
+  background: none;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 17px;
+  margin-bottom: 3rem;
+  padding: 3px;
+  cursor: pointer;
+  border: 2px solid #67bce6a9;
+}
+
+select option {
+  background: #0F0F1D;
+}
+
+button {
+  height: 50px;
+  width: 15rem;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #d51bff00;
+  font-size: 25px;
+  cursor: pointer;
+  border: 2px solid #D41BFF;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+button:hover {
+  background: #D41BFF;
+}
