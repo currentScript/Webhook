@@ -4,4 +4,4 @@ simple selfmade discord message sender with webhooks
 
 just a fun project
 
-test here: https://currentscript.github.io/Discord-Webhooks-Messages/
+test here: https://jannis2106.github.io/Discord-Webhooks-Messages/
